@@ -64,3 +64,85 @@ void myMethod() {
     System.out.println(x); // Prints 20
 }
 System.out.println(x); // Prints 10
+
+
+## DataTypes
+
+Question 1: What are data types in Java?
+Answer: Data types in Java define the type of data that can be stored in a variable. 
+They determine the size of the variable, the range of values it can hold, and the operations that can be performed on it.
+Java has two main categories of data types: primitive data types and reference data types.
+
+
+Question 2: What are the primitive data types in Java?
+Answer: Java has eight primitive data types:
+
+byte: 8-bit signed integer. Range: -128 to 127.
+short: 16-bit signed integer. Range: -32,768 to 32,767.
+int: 32-bit signed integer. Range: -2^31 to 2^31-1.
+long: 64-bit signed integer. Range: -2^63 to 2^63-1.
+float: 32-bit floating-point. Used for decimal values.
+double: 64-bit floating-point. Used for decimal values with higher precision.
+char: 16-bit Unicode character. Represents a single character.
+boolean: Represents one of two values: true or false.
+
+
+Question 3: What is the difference between float and double?
+float: A single-precision 32-bit IEEE 754 floating point. It is less precise and can represent a smaller range of values.
+double: A double-precision 64-bit IEEE 754 floating point. It is more precise and can represent a larger range of values.
+Example:
+float f = 3.14f; // 'f' suffix is required for float literals
+double d = 3.14; // No suffix needed for double literals
+
+
+Question 4: What is a reference data type in Java?
+Answer: Reference data types refer to objects and are used to store references to those objects in memory. 
+Unlike primitive data types, which hold their values directly, reference types hold the address of the object.
+Examples:
+Strings
+Arrays
+Classes
+Interfaces
+
+Question 5: How do you declare and initialize a variable of a specific data type?
+Answer: You declare a variable by specifying its data type followed by the variable name, and you can initialize it at the same time or later. For example:
+int age = 25; // Declaration and initialization
+String name; // Declaration
+name = "Alice"; // Initialization
+
+
+Question 6: What is type casting in Java?
+Answer: Type casting is the process of converting a variable from one data type to another. There are two types of casting:
+Widening Casting (Implicit): Automatically converting a smaller type to a larger type (e.g., int to double).
+Narrowing Casting (Explicit): Manually converting a larger type to a smaller type (e.g., double to int).
+Example:
+int num = 10;
+double d = num; // Widening casting
+double d2 = 9.78;
+int num2 = (int) d2; // Narrowing casting
+
+
+Question 7: What is the default value of primitive data types in Java?
+Answer: The default values for primitive data types in Java are:
+byte: 0
+short: 0
+int: 0
+long: 0L
+float: 0.0f
+double: 0.0d
+char: '\u0000' (null character)
+boolean: false
+
+
+Question 8: Can you use a primitive data type to store a null value?
+Answer: No, primitive data types cannot store null values. They must always hold a valid value.
+If you need to represent a variable that can be null, you should use the corresponding wrapper class (e.g., Integer for int, Double for double, etc.)
+
+
+
+Question 9: What is the difference between String and StringBuilder?
+String: Immutable sequence of characters. Once a String object is created, it cannot be changed. Any modification creates a new String object.
+String str = "Hello";
+str = str + " World"; // Creates a new String object
+StringBuilder: Mutable sequence of characters. It allows modifications without creating new objects, making it more efficient for string manipulation.
+StringBuilder sb = new String
