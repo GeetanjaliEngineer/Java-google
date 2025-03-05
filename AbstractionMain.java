@@ -16,7 +16,20 @@ abstract class Abstraction {
 
 // ✅ Move AbstractDemo outside the Abstraction class-- 
 // superclass is abstractDemo
-
+/* Does Abstract class have constructor?
+ Answer: This is a famous interview question and the answer is: Yes,
+ abstract classes have constructor. Either you can provide it or the
+ default one will be provided by Java. Now, you must be wondering if
+ you cannot create an object of abstract class then what is the need
+ of a constructor.
+ One thing you must know is that the constructors are used when you
+ are creating an object of a class, to initialize the data members of
+ that class and your abstract class can have data members.
+ Now, when your class extends abstract class then the same abstract
+ class will become super class for your extending class and
+ remember when you have constructor of your class then first line of
+your constructor is always a call to super class constructor and this
+ is the time when your abstract class constructor will get called-*/
 class AbstractDemo extends Abstraction {
     @Override
     void print() {
