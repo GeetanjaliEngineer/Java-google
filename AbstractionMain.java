@@ -14,7 +14,9 @@ abstract class Abstraction {
     }
 }
 
-// ✅ Move AbstractDemo outside the Abstraction class
+// ✅ Move AbstractDemo outside the Abstraction class-- 
+// superclass is abstractDemo
+
 class AbstractDemo extends Abstraction {
     @Override
     void print() {
@@ -24,6 +26,8 @@ class AbstractDemo extends Abstraction {
 
 public class AbstractionMain {
     public static void main(String[] args) {
+
+        //constructor -- class will become superclass
         AbstractDemo abs = new AbstractDemo(); // ✅ Correct instantiation
         abs.print();
         abs.display();
