@@ -1,1 +1,66 @@
 ## Variables
+
+What are variables in Java?
+Variables in Java are containers that hold data values.
+Each variable has a specific type, which determines what kind of data it can hold
+(e.g., integers, floating-point numbers, characters, etc.). 
+Variables must be declared before they can be used.
+
+Question 2: How do you declare a variable in Java?
+Answer: To declare a variable in Java, you specify the type followed by the variable name. (Variable_type Variable_name)
+For example:
+int age; // Declares an integer variable named age
+String name; // Declares a String variable named name
+
+
+Question 3: How do you initialize a variable in Java?
+Answer: You can initialize a variable at the time of declaration or later in the code. Here’s how to do both:
+int age = 25; // Declaration and initialization
+String name; // Declaration
+name = "Alice"; // Initialization
+
+
+Question 4: What is the difference between primitive and reference variables?
+Primitive Variables: These hold their values directly. Examples include int, char, float, double, boolean, etc.
+Reference Variables: These hold references (or addresses) to objects in memory. Examples include String, Arrays, and user-defined classes.
+
+
+Question 5: Can you change the value of a variable after it has been initialized?
+Answer: Yes, you can change the value of a variable after it has been initialized. For example:
+int age = 25; // Initial value
+age = 30; // Changing the value
+
+
+Question 6: What is variable scope in Java?
+Answer: Variable scope refers to the visibility of a variable within different parts of a program. In Java, the scope can be:
+Local Variables: Declared within a method or block and can only be accessed within that method or block.
+Instance Variables: Declared within a class but outside any method. They can be accessed by all methods in the class.
+Static Variables: Declared with the static keyword and belong to the class rather than any instance. They can be accessed by all instances of the class.
+
+
+Question 7: What is the difference between final and non-final variables?
+Final Variables: Once a final variable is initialized, its value cannot be changed. It is a constant.
+final int MAX_VALUE = 100;
+// MAX_VALUE = 200; // This will cause a compilation error
+Non-final Variables: These can be changed after initialization.
+
+
+Question 8: How do you declare multiple variables of the same type in one line?
+Answer: You can declare multiple variables of the same type in one line by separating them with commas:
+int x = 10, y = 20, z = 30;4
+
+
+Question 9: What happens if you try to use a variable before it has been initialized?
+Answer: If you try to use a local variable before it has been initialized, the Java compiler will throw a compilation error. For example:
+int x; // Declared but not initialized
+System.out.println(x); // Compilation error: variable x might not have been initialized
+
+
+Question 10: Can you have variables with the same name in different scopes?
+Answer: Yes, you can have variables with the same name in different scopes. The variable in the inner scope will shadow the variable in the outer scope. For example:
+int x = 10; // Outer scope variable
+void myMethod() {
+    int x = 20; // Inner scope variable
+    System.out.println(x); // Prints 20
+}
+System.out.println(x); // Prints 10
